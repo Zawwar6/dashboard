@@ -13,7 +13,7 @@ export const Sidebar = () => {
         <RouteSelect />
       </div>
 
-      {/* <Plan /> */}
+      <Plan />
     </div>
   );
 };
