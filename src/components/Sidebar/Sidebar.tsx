@@ -7,13 +7,13 @@ import { Plan } from "./Plan";
 export const Sidebar = () => {
   return (
     <div>
-      <div className="overflow-y-scroll sticky top-4 h-[calc(100vh-32px-48px)]">
+      <div className="sticky top-4 h-[calc(100vh-32px-48px)]">
         <AccountToggle />
-        <Search />
+        {/* <Search /> */}
         <RouteSelect />
       </div>
 
-      <Plan />
+      {/* <Plan /> */}
     </div>
   );
 };
