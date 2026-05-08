@@ -17,7 +17,7 @@ export default function DashboardPage() {
   }, []);
 
   return (
-    <main className="grid gap-4 p-4 grid-cols-[220px,_1fr]">
+    <main className="grid gap-4 p-4 grid-cols-1 md:grid-cols-[220px,_1fr]">
       <Sidebar />
       <Dashboard />
     </main>
