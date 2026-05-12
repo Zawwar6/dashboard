@@ -21,7 +21,7 @@ export const GridTwo = () => {
       </div>
 
       {/* Responsive Table */}
-      <div className="w-full overflow-x-auto">
+      <div className="w-full overflow-x-auto scrollbar-hide">
         <table className="min-w-[650px] w-full table-auto">
 
           {/* Table Head */}
