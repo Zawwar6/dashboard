@@ -91,21 +91,27 @@ const Route = ({
   return (
     <button
       className={`
-        flex items-center gap-3
-        w-full rounded-xl
-        px-3 py-2.5
-        text-sm font-medium
-        transition-all duration-200
-
+        w-full flex items-center gap-3.5 
+        px-5 py-3.5 rounded-2xl text-[15px] font-medium
+        transition-all duration-200 active:scale-[0.98]
         ${
           selected
-            ? "bg-violet-100 text-violet-700 shadow-sm"
-            : "text-stone-600 hover:bg-stone-100"
+            ? "bg-violet-600 text-white shadow-lg shadow-violet-500/25"
+            : "text-stone-700 hover:bg-stone-100 hover:text-stone-900"
         }
       `}
     >
-      <Icon className="text-lg" />
-      <span>{title}</span>
+      <Icon 
+        className={`text-2xl transition-transform duration-200
+          ${selected ? "text-white" : "text-stone-500 group-hover:scale-110"}`}
+      />
+
+      <span className="flex-1 text-left tracking-tight">{title}</span>
+
+      {/* Active Dot */}
+      {selected && (
+        <div className="ml-auto w-2 h-2 rounded-full bg-white shadow-sm" />
+      )}
     </button>
   );
 };
